@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+.slider-container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-slider{
+    height: 100vh;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+}
+
+.left-slider > div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.left-slider h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: -3rem;
+}
+
+.right-slider{
+    position: absolute;
+    top: 0;
+    left: 35%;
+    height: 100vh;
+    width: 65%;   
+    transition: transform .5s ease-in-out;
+}
+
+.right-slider > div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-container .action-buttons button{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 11;
+}
+
+.slider-container .action-buttons .down-button{
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button{
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+button{
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    font-size: 15px;
+    padding: 15px;
+}
+
+button:hover{
+    color: #000;
+}
+
+button:active{
+    outline: none;
+}
