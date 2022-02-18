@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+body{
+    font-family: 'Poppins', Arial;
+    height: 100vh;
+    background-color: #e8e8e8;
+    margin: 0;
+    display: grid;
+    place-content: center;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    width: 62%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    background-color: rgb(224, 224, 224);
+}
+
+.card{
+    width: 30%;
+    min-width: 500px;
+    margin: 0 auto;
+    padding: 3em;
+    cursor: pointer;
+    position: relative;
+}
+
+.card::before, .card::after{
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 34%;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    z-index: -3;
+}
+
+h1{
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card::after{
+    width: 0%;
+    background-color: #004cff;
+    left: 0;
+    z-index: -1;
+}
+
+p{
+    clip-path: circle(0% at 100% 0);
+    color: #fff;
+    font-size: .9rem;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 1.5em 0 0 3em;
+    transform: translateX(20px);
+}
+
+p::before{
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 5px;
+    top: 2em;
+    left: 0;
+    background-color: darkblue;
+}
