@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ecebda;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  left: 12%;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  top: 0;
+}
+
+.title {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 10rem;
+  line-height: 10.5rem;
+  pointer-events: none;
+  position: relative;
+}
+
+.title:before {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  left: -15%;
+  top: 15%;
+  background-color: #000;
+}
+
+.title .title-2, .title .title-3 {
+  position: relative;
+  z-index: 2;
+}
+
+p {
+  font-family: 'Playfair Display SC', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
+
+.water-bg {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  z-index: -1;
+  background: url(https://images.unsplash.com/photo-1524088484081-4ca7e08e3e19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1866&q=80);
+  right: 0;
+  background-size: cover;
+  mix-blend-mode: luminosity;
+  opacity: .2;
+}
+
+.img {
+  position: absolute;
+  width: 16em;
+  height: 27em;
+  top: 30%;
+  left: 30%;
+  z-index: 1;
+  background: yellow;
+}
+/*# sourceMappingURL=style.css.map */
