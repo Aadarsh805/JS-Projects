@@ -63,7 +63,6 @@ body{
     color: #777;
 }
 
-
 @media(max-width:600px){
     .code-container{
         flex-wrap: wrap;
