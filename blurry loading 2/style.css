@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli';
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bg {
+    height: calc(100% + 60px);
+    width:  calc(100% + 60px);
+    position: absolute;
+    background: url(https://images.unsplash.com/photo-1650331264086-acda6784086b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80) no-repeat center center/cover;
+    z-index: -1;
+    filter: blur(30px);
+    top: -30px;
+    left: -30px;
+}
+
+.loading-text{
+    color: #fff;
+    font-size: 2rem;
+}
