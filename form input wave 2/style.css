@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto';
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: steelblue;
+}
+
+.container{
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    min-width: 18rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.form-control{
+    width: 100%;
+    position: relative;
+    margin: 0 0 10px;
+}
+
+form p{
+    font-size: .8rem;
+}
+
+form p a{
+    color: lightblue;
+    text-decoration: none;
+}
+
+.btn{
+    cursor: pointer;
+    width: 100%;
+    padding: 8px;
+    color: steelblue;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    font-size: .9rem;
+    margin-top: .5rem;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: .75rem 0;
+    font-size: .9rem;
+}
+
+input:focus{
+    border-color: lightblue;
+}
+
+input:focus + label{
+    color: lightblue;
+}
+
+label{
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+input  + label span{
+    display: inline-block;
+}
+
+input:focus + label span{
+    transform: translateY(-30px);
+    transition: transform 300ms ease;
+}
